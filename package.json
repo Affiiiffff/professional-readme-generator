@@ -1,23 +1,14 @@
 {
-  "name": "professional-readme-generator",
+  "name": "static-site",
   "version": "1.0.0",
-  "description": "This is my professional readme generator",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Affiiiffff/professional-readme-generator.git"
-  },
-  "author": "Afif",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Affiiiffff/professional-readme-generator/issues"
-  },
-  "homepage": "https://github.com/Affiiiffff/professional-readme-generator#readme",
   "dependencies": {
-    "fs": "^0.0.1-security",
-    "inquirer": "^9.1.0"
+    "inquirer": "8.2.4"
   }
 }
