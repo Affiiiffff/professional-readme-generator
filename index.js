@@ -6,12 +6,12 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create a function to write README file
 
-const generateReadme = () =>
-  inquirer
+const promptUser = () => {
+  return inquirer
     .prompt([
       {
         type: "input",
-        name: "Title",
+        name: "title",
         message: "What is your Title?",
       },
       {
@@ -46,20 +46,19 @@ const generateReadme = () =>
       },
     ])
     .then((answers) => {
-      const readmePageContent = generateReadme(answers);
-      ge;
+      const readmePageContent = generateMarkdown(answers);
 
       fs.writeFile("README.md", readmePageContent, (err) =>
         err ? console.log(err) : console.log("Successfully created Readme!")
       );
     });
-
+};
 // TODO: Create a function to initialize app
 const init = () => {
-  promptUser()
-    .then((answers) => writeFile("index.html", generateReadme(answers)))
-    .then(() => console.log("Successfully wrote to Readme"))
-    .catch((err) => console.error(err));
+  promptUser();
+  // // .then((answers) => writeFile("README.md", promptUser(answers)))
+  // .then(() => console.log("Successfully wrote to Readme"))
+  // .catch((err) => console.error(err));
 };
 
 init();
