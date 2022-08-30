@@ -2,16 +2,17 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 // TODO: Create an array of questions for user input
-const questions = [
-  "What's your project called?",
-  "Whats is your description?",
-  "What are your installation?",
-  "What is your usage?",
-  "What are you contributing?",
-];
+// const questions = [
+//   "What's your project called?",
+//   "Whats is your description?",
+//   "What are your installation?",
+//   "What is your usage?",
+//   "What are you contributing?",
+// ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+
+const generateReadme = ({ name, location, github, linkedin }) =>
   inquirer
     .prompt([
       {
@@ -46,16 +47,22 @@ function writeToFile(fileName, data) {
       },
     ])
     .then((answers) => {
-      const htmlPageContent = generateHTML(answers);
+      const readmePageContent = generateReadme(answers);
 
-      fs.writeFile("README.md", htmlPageContent, (err) =>
-        err ? console.log(err) : console.log("Successfully created README.md")
+      fs.writeFile("index.html", readmePageContent, (err) =>
+        err ? console.log(err) : console.log("Successfully created Readme!")
       );
     });
-}
 
 // TODO: Create a function to initialize app
 function init() {}
 
 // Function call to initialize app
+const init = () => {
+  promptUser()
+    .then((answers) => writeFile("index.html", generateReadme(answers)))
+    .then(() => console.log("Successfully wrote to Readme"))
+    .catch((err) => console.error(err));
+};
+
 init();
