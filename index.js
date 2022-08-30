@@ -1,55 +1,55 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
-// const questions = [
-//   "What's your project called?",
-//   "Whats is your description?",
-//   "What are your installation?",
-//   "What is your usage?",
-//   "What are you contributing?",
-// ];
 
 // TODO: Create a function to write README file
 
-const generateReadme = ({ name, location, github, linkedin }) =>
+const generateReadme = () =>
   inquirer
     .prompt([
       {
         type: "input",
-        name: "name",
-        message: "What is your name?",
+        name: "Title",
+        message: "What is your Title?",
       },
       {
         type: "input",
-        name: "location",
-        message: "Where are you from?",
+        name: "Description",
+        message: "What is your description?",
       },
       {
         type: "input",
-        name: "hobby",
-        message: "What is your favorite hobby?",
+        name: "Installation",
+        message: "What are your installation requirements?",
       },
       {
         type: "input",
-        name: "food",
-        message: "What is your favorite food?",
+        name: "Usage",
+        message: "What is your Usage?",
       },
       {
         type: "input",
-        name: "github",
-        message: "Enter your GitHub Username",
+        name: "Contributing",
+        message: "What are you contributing?",
       },
       {
         type: "input",
         name: "linkedin",
         message: "Enter your LinkedIn URL.",
       },
+      {
+        type: "input",
+        name: "Github",
+        message: "Enter your Github URL.",
+      },
     ])
     .then((answers) => {
       const readmePageContent = generateReadme(answers);
+      ge;
 
-      fs.writeFile("index.html", readmePageContent, (err) =>
+      fs.writeFile("README.md", readmePageContent, (err) =>
         err ? console.log(err) : console.log("Successfully created Readme!")
       );
     });
