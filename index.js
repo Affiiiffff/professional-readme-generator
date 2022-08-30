@@ -55,9 +55,6 @@ const generateReadme = ({ name, location, github, linkedin }) =>
     });
 
 // TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
 const init = () => {
   promptUser()
     .then((answers) => writeFile("index.html", generateReadme(answers)))
