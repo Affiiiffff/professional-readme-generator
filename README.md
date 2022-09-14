@@ -5,6 +5,7 @@ Read-me Generator
 ## Table of Contents
 
 - [Description](#Description)
+- [Usage](#Usage)
 - [License](#license)
 - [Questions](#questions)
 
