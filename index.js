@@ -64,12 +64,9 @@ const promptUser = () => {
       );
     });
 };
-// TODO: Create a function to initialize app
+
 const init = () => {
   promptUser();
-  // // .then((answers) => writeFile("README.md", promptUser(answers)))
-  // .then(() => console.log("Successfully wrote to Readme"))
-  // .catch((err) => console.error(err));
 };
 
 init();
