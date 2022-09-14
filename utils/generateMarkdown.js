@@ -57,12 +57,10 @@ function generateMarkdown(data) {
   ${data.Github}
   ## License : 
   ${data.license}
-  ${renderLicenseSection(data.license)}
+ 
 
   ## Questions
-  If you have any questions about this projects, please contact me directly at ${
-    data.Email
-  }. You can view more of my projects at https://github.com/${data.Github}.
+  If you have any questions about this projects, please contact me directly at ${data.Email}. You can view more of my projects at https://github.com/${data.Github}.
 
   `;
 }
