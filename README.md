@@ -1,35 +1,37 @@
+## Table of Contents
 
- 
-  ## Table of Contents
-  * [Description](#Description)
-  * [Usage](#Usage)
-  * [License](#license)
-  * [Contributing](#Contributing)
-  * [Questions](#questions)
-  
-  
-  
-  ## Project title :
-   Test
+- [Description](#Description)
+- [Usage](#Usage)
+- [License](#license)
+- [Contributing](#Contributing)
+- [Questions](#questions)
 
-  ## Description : 
-  How to use this application
-  ## Installation :
-   none
-  ## Usage :
-   as shown in this video
-  
-  ## Contributing ;
-   my soul
-  ## linkedin : 
-  
-  ## Github ; 
-  Affiiiffff
-  ## License : 
-  Apache license 2.0
- 
+## Project title :
 
-  ## Questions
-  If you have any questions about this projects, please contact me directly at afifpatel@hotmail.co.uk. You can view more of my projects at https://github.com/Affiiiffff.
+Readme Generator
 
-  
+## Description :
+
+This is an application that allows users to create a readme automatically based on questions they have answered.
+
+## Installation :
+
+none required
+
+## Usage :
+
+Open index.js and run the command 'node index.js'
+this will prompt a series of questions.
+the answers will be populated to a new readme file with a predetermined format consisting of links etc.
+
+## Github Username;
+
+Affiiiffff
+
+## License :
+
+Apache license 2.0
+
+## Questions
+
+If you have any questions about this projects, please contact me directly at afifpatel@hotmail.co.uk. You can view more of my projects at https://github.com/Affiiiffff.
