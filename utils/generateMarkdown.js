@@ -32,9 +32,7 @@ function generateMarkdown(data) {
   ${data.description}
   ## Table of Contents
   * [Description](#Description)
-  * [Usage](#Usage)
   * [License](#license)
-  * [Contributing](#Contributing)
   * [Questions](#questions)
   
   
