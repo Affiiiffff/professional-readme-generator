@@ -16,8 +16,11 @@ function generateMarkdown(data) {
   # Description : ${data.Description}
   # Installation : ${data.Installation}
   # Usage : ${data.Usage}
-  #Contributing ; ${data.Contributing}
-  
+  # Contributing ; ${data.Contributing}
+  # linkedin : ${data.linkedin}
+  # Github ; ${data.Github}
+  # License : ${data.License}
+
   
   `;
 }
