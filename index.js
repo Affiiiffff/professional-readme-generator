@@ -42,13 +42,13 @@ const promptUser = () => {
       {
         type: "input",
         name: "Github",
-        message: "Enter your Github URL.",
+        message: "Enter your Github username",
       },
       {
         type: "list",
-        name: "License",
+        name: "license",
         message: "Choose a License from the following:",
-        choices: ["Apache license 2.0", "Boost Software License 1.0"],
+        choices: ["Apache license 2.0", "Boost Software License 1.0", "None"],
       },
     ])
     .then((answers) => {
