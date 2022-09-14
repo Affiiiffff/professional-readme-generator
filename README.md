@@ -1,6 +1,6 @@
 ## Link to demo Video
 
-![https://drive.google.com/file/d/1t9UtZW3bsicdik20fDw6LwpffIR5G0YG/view]
+[https://drive.google.com/file/d/1t9UtZW3bsicdik20fDw6LwpffIR5G0YG/view]
 
 ## Table of Contents
 
