@@ -44,6 +44,12 @@ const promptUser = () => {
         name: "Github",
         message: "Enter your Github URL.",
       },
+      {
+        type: "list",
+        name: "License",
+        message: "Choose a License from the following:",
+        choices: ["Apache license 2.0", "Boost Software License 1.0"],
+      },
     ])
     .then((answers) => {
       const readmePageContent = generateMarkdown(answers);
