@@ -5,9 +5,7 @@ Read-me Generator
 ## Table of Contents
 
 - [Description](#Description)
-- [Usage](#Usage)
 - [License](#license)
-- [Contributing](#Contributing)
 - [Questions](#questions)
 
 ## Project title :
